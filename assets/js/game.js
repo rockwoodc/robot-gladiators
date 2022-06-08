@@ -94,16 +94,16 @@ var startGame = function() {
     // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
     fight(pickedEnemyName);
     }
+    else {
+      window.alert("You have lost your robot in battle! Game Over!");
+      break;
+    }
   }
-};
-  
-  else {
-    window.alert("You have lost your robot in battle! Game Over!");
-    break;
-  }
-  
   //after the loop, player is either out of health or enemies, run endgame function
   endGame();
+};
+  
+
 
   // function to end the entire game
   var endGame = function() {
@@ -124,6 +124,10 @@ var startGame = function() {
     } else {
       window.alert('Thank you for playing Robot Gladiators! Come back soon!');
     }
+  };
+
+  var shop = function() {
+    console.log("entered the shop");
   };
 
 //   //play again
